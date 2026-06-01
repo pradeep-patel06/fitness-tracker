@@ -1,0 +1,423 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
+  background:#050505;
+}
+
+
+
+.muscle-page{
+  min-height:100vh;
+  background:#050505;
+  color:white;
+  padding:60px 20px;
+}
+
+
+
+.top-section{
+  text-align:center;
+}
+
+.top-section h1{
+  font-size:60px;
+  margin-bottom:10px;
+  color:red;
+  letter-spacing:1px;
+  animation:pulse 2s infinite;
+}
+
+.top-section p{
+  color:#bcbcbc;
+  font-size:18px;
+}
+
+
+
+.goal-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.goal-buttons button{
+  background:#111;
+  border:1px solid red;
+  color:white;
+  padding:15px 30px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+  font-size:16px;
+  font-weight:bold;
+}
+
+.goal-buttons button:hover{
+  background:red;
+  transform:scale(1.05);
+  box-shadow:0 0 15px red;
+}
+
+
+
+.plan-card{
+  max-width:750px;
+  margin:50px auto;
+  background:#101010;
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 0 25px rgba(255,0,0,0.3);
+  animation:fade 0.5s ease;
+}
+
+.plan-card h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:40px;
+  color:white;
+}
+
+
+
+.info-box{
+  background:#181818;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.info-box:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 15px rgba(255,0,0,0.5);
+}
+
+.info-box span{
+  color:gray;
+  font-size:14px;
+}
+
+.info-box h3{
+  margin-top:10px;
+  font-size:28px;
+  color:white;
+}
+
+
+
+.start-btn{
+  width:100%;
+  padding:18px;
+  background:red;
+  border:none;
+  color:white;
+  font-size:18px;
+  border-radius:12px;
+  cursor:pointer;
+  margin-top:20px;
+  transition:0.3s;
+  font-weight:bold;
+}
+
+.start-btn:hover{
+  background:#cc0000;
+  transform:scale(1.02);
+  box-shadow:0 0 20px red;
+}
+
+
+
+.loading-box{
+  margin-top:30px;
+  text-align:center;
+}
+
+.loader{
+  width:60px;
+  height:60px;
+  border:5px solid #222;
+  border-top:5px solid red;
+  border-radius:50%;
+  margin:auto;
+  animation:spin 1s linear infinite;
+}
+
+.loading-box p{
+  margin-top:15px;
+  color:#ccc;
+  font-size:18px;
+}
+
+
+
+.training-box{
+  margin-top:40px;
+  background:#111;
+  padding:35px;
+  border-radius:20px;
+  animation:fade 0.5s ease;
+  border:1px solid rgba(255,0,0,0.3);
+}
+
+.training-box h2{
+  text-align:center;
+  color:red;
+  margin-bottom:10px;
+  font-size:36px;
+}
+
+.motivation{
+  text-align:center;
+  color:#ccc;
+  margin-bottom:30px;
+  font-size:18px;
+  animation:fadeText 2s infinite;
+}
+
+
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+
+
+
+.stat-card{
+  background:#181818;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+  position:relative;
+  overflow:hidden;
+}
+
+.stat-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px rgba(255,0,0,0.5);
+}
+
+.stat-card::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:4px;
+  background:red;
+  left:0;
+  top:0;
+}
+
+.stat-card span{
+  color:gray;
+  font-size:14px;
+}
+
+.stat-card h3{
+  margin-top:10px;
+  font-size:30px;
+  color:white;
+}
+
+
+
+.progress-section{
+  margin-top:35px;
+}
+
+.progress-section p{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.progress-bar{
+  width:100%;
+  height:22px;
+  background:#222;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+  background:linear-gradient(to right,red,#ff4d4d);
+  width:0%;
+  transition:1s;
+  border-radius:20px;
+  box-shadow:0 0 15px red;
+}
+
+
+
+.water-box{
+  margin-top:30px;
+  background:#181818;
+  padding:18px;
+  border-radius:12px;
+  text-align:center;
+  color:#00c3ff;
+  font-weight:bold;
+  animation:waterGlow 2s infinite;
+}
+
+
+
+.control-buttons{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+}
+
+.control-buttons button{
+  flex:1;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+  background:red;
+  color:white;
+  transition:0.3s;
+}
+
+.control-buttons button:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px red;
+}
+
+
+
+.completed-box{
+  margin-top:40px;
+  background:#181818;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  animation:fade 0.5s ease;
+  border:1px solid rgba(255,0,0,0.4);
+}
+
+.completed-box h2{
+  color:red;
+  margin-bottom:15px;
+  font-size:38px;
+}
+
+.completed-box p{
+  color:#ddd;
+  font-size:20px;
+  margin-top:10px;
+}
+
+
+
+@keyframes spin{
+
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes fade{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes pulse{
+
+  0%{
+    text-shadow:0 0 5px red;
+  }
+
+  50%{
+    text-shadow:0 0 20px red;
+  }
+
+  100%{
+    text-shadow:0 0 5px red;
+  }
+}
+
+@keyframes fadeText{
+
+  0%{
+    opacity:0.5;
+  }
+
+  50%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0.5;
+  }
+}
+
+@keyframes waterGlow{
+
+  0%{
+    box-shadow:0 0 5px #00c3ff;
+  }
+
+  50%{
+    box-shadow:0 0 20px #00c3ff;
+  }
+
+  100%{
+    box-shadow:0 0 5px #00c3ff;
+  }
+}
+
+
+
+@media(max-width:768px){
+
+  .muscle-page{
+    padding:40px 15px;
+  }
+
+  .top-section h1{
+    font-size:42px;
+  }
+
+  .plan-card{
+    padding:25px;
+  }
+
+  .plan-card h2{
+    font-size:32px;
+  }
+
+  .info-box h3{
+    font-size:22px;
+  }
+
+  .start-btn{
+    font-size:16px;
+  }
+
+  .training-box h2{
+    font-size:28px;
+  }
+
+  .control-buttons{
+    flex-direction:column;
+  }
+
+  .completed-box h2{
+    font-size:30px;
+  }
+}

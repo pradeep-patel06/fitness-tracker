@@ -1,0 +1,187 @@
+.home{
+  background:black;
+  color:white;
+  min-height:100vh;
+  font-family:Arial, sans-serif;
+}
+
+
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px;
+  gap:50px;
+}
+
+.hero-left{
+  width:50%;
+}
+
+.hero-left h1{
+  font-size:60px;
+  line-height:75px;
+  margin-bottom:20px;
+}
+
+.hero-left span{
+  color:red;
+}
+
+.hero-left p{
+  color:#cfcfcf;
+  margin-top:20px;
+  line-height:30px;
+  width:80%;
+  font-size:18px;
+}
+
+.hero-left button{
+  background:red;
+  color:white;
+  border:none;
+  padding:15px 35px;
+  border-radius:10px;
+  margin-top:30px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-left button:hover{
+  background:#cc0000;
+  transform:scale(1.05);
+}
+
+.hero-right img{
+  width:420px;
+  height:520px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid red;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+.hero-right img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 30px red;
+}
+
+
+
+.services{
+  padding:40px 80px 80px;
+}
+
+.services h2{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:50px;
+  color:white;
+}
+
+.service-cards{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+
+
+.card{
+  background:#111;
+  border-radius:20px;
+  overflow:hidden;
+  width:350px;
+  transition:0.4s;
+  cursor:pointer;
+  border:1px solid transparent;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px rgba(255,0,0,0.7);
+  border:1px solid red;
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  transition:0.4s;
+}
+
+.card:hover img{
+  transform:scale(1.08);
+}
+
+
+
+.service-link{
+  text-decoration:none;
+}
+
+.service-link h3{
+  padding:20px;
+  font-size:28px;
+  color:white;
+  transition:0.3s;
+}
+
+.service-link h3:hover{
+  color:red;
+}
+
+
+
+@media(max-width:1000px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-left{
+    width:100%;
+  }
+
+  .hero-left p{
+    width:100%;
+  }
+
+  .hero-right img{
+    width:320px;
+    height:420px;
+  }
+
+  .services{
+    padding:40px 20px;
+  }
+
+  .services h2{
+    font-size:40px;
+  }
+}
+
+@media(max-width:600px){
+
+  .hero{
+    padding:40px 20px;
+  }
+
+  .hero-left h1{
+    font-size:42px;
+    line-height:55px;
+  }
+
+  .card{
+    width:100%;
+  }
+
+  .card h3{
+    font-size:24px;
+  }
+}
