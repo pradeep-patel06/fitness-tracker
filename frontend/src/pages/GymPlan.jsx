@@ -69,7 +69,7 @@ function GymPlan() {
       setSuccess(false);
 
       const response = await fetch(
-        "http://localhost:5000/api/payment/create-order",
+        "https://fitness-tracker-aqw1.onrender.com/api/payment/create-order",
         {
           method: "POST",
 
