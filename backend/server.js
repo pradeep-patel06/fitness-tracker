@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Fitness Tracker Backend is running 🚀");
+  res.send("Fitness Tracker Backend is running ");
 });
 
 

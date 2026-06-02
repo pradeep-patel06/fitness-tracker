@@ -19,7 +19,7 @@ function Register() {
     try {
 
       await API.post("/auth/register", {
-        username,
+        name: username,
         email,
         password
       });
